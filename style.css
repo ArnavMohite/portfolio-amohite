@@ -1,72 +1,64 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
-
+/* Ferrari Red + Black + White Theme */
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: #121212;
-  color: #222;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #121212;
+  color: #f2f2f2;
   line-height: 1.6;
 }
 
-/* Hero section with F1 car */
-.hero {
-  background-image: url('f1-car.jpg');
+header {
+  background-image: url("f1-car.jpg");  /* ✅ UPDATED LINE */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
   text-align: center;
+  padding: 100px 20px 80px;
   position: relative;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
-.hero-text {
-  color: #fff;
-  text-shadow: 2px 2px 8px #000;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px 20px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
-.hero-text h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
+header h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #ff3c38; /* Ferrari red */
   margin: 0;
-  color: #ffd700;
 }
 
-.hero-text p {
-  font-size: 1.2rem;
-  color: #f0f0f0;
+header p {
+  font-size: 1.3em;
+  color: #fff;
 }
 
-/* Sections */
 section {
-  padding: 30px 40px;
-  background: #ffffff;
+  background: #fefefe;
+  color: #111;
   margin: 30px auto;
+  padding: 30px 40px;
   max-width: 900px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 60, 56, 0.3);
+  transition: transform 0.3s ease;
 }
 
 section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.25);
+  transform: scale(1.01);
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
-  color: #c09400;
-  margin-bottom: 15px;
+  color: #ff3c38;
+  font-weight: 700;
 }
 
 a {
-  color: #c09400;
+  color: #ff3c38;
   text-decoration: none;
 }
 
@@ -74,21 +66,10 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #0a0a0a;
+  background: #1b1b1b;
+  color: #ccc;
   font-size: 0.9em;
-  color: #aaa;
-  border-top: 2px solid #ffd700;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-::selection {
-  background: #ffd700;
-  color: #000;
 }
