@@ -1,3 +1,4 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
 
 body {
@@ -9,27 +10,39 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: linear-gradient(to right, #000000, #1a1a1a);
-  color: #ffd700;
-  padding: 30px;
+/* Hero section with F1 car */
+.hero {
+  background-image: url('f1-car.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border-bottom: 3px solid #ffd700;
+  position: relative;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
-header h1 {
+.hero-text {
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.hero-text h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.8em;
+  font-size: 3rem;
   margin: 0;
   color: #ffd700;
 }
 
-header p {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #ccc;
+.hero-text p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
 }
 
+/* Sections */
 section {
   padding: 30px 40px;
   background: #ffffff;
@@ -61,6 +74,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
