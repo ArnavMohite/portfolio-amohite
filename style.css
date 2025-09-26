@@ -4,7 +4,7 @@ body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
   padding: 0;
-  background: #121212;
+  background: #121212; /* soft black */
   color: #222;
   line-height: 1.6;
 }
@@ -31,7 +31,7 @@ header p {
 
 section {
   padding: 30px 40px;
-  background: #ffffff;
+  background: #ffffff; /* bright white panels */
   margin: 30px auto;
   max-width: 900px;
   border-radius: 15px;
@@ -46,7 +46,7 @@ section:hover {
 }
 
 h2 {
-  color: #c09400;
+  color: #c09400; /* gold headers */
   margin-bottom: 15px;
 }
 
